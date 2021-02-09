@@ -7,7 +7,7 @@ const ToDoList = () => {
 
   const key = [];
   let id = array[key].ID;
-  let email1 = array[key].Email;
+  let email = array[key].Email;
   let password = array[key].Password;
   let firstName = array[key].FirstName;
   let lastName = array[key].LastName;
