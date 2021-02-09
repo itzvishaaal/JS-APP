@@ -1,0 +1,33 @@
+<Form 
+                    value={value}
+                    onChange={nextValue => setValue(nextValue)}
+                    onReset={() => setValue({})}
+                    onSubmit={({ value }) => {}}
+                    
+                  >
+                    <FormField name="email" htmlFor="useremail" label="Email:">
+                      <TextInput id="email" pattern=".+@+.com" required/>
+                    </FormField>
+                    <FormField name="password" htmlFor="text-input-id" label="Password:">
+                      <TextInput id="pass" name="password" minlength="8" required/>
+                    </FormField>
+                    <Box direction="col" gap="medium">
+                      <Button type="submit" primary label="Login" />
+                    </Box>
+                  </Form>
+
+
+
+                  return (
+                    <TextInput 
+                    placeholder="Email"
+                    value={email}
+                    onChange={event => {console.log(event.target.value)
+                        setEmail(event.target.value)}}
+                  />
+                <TextInput 
+                    placeholder="Passwprd"
+                    value={password}
+                    onChange={event => {console.log(event.target.value)
+                        setPassword(event.target.value)}}
+                  />
